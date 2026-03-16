@@ -10,6 +10,10 @@ README
 #include<string.h>
 #include <limits.h>
 
+/*DECLARATIONS B4 THE FUNCTION ITSELF (more info in the previous code)*/
+void print_array (int array[], int n_1);
+void check_i (int check, int n);
+
 
 /*GENERATES THE VALUES FROM THE INTERVAL <a;b> INTO THE PASSED ARRAY
 Notes:      
@@ -183,10 +187,27 @@ Preparation: Just have an int n variable ready an pass it as an memory adress
     }
 }
 
-//After this point I expect of you to understand and automatically dela with all that pointer function parameter thingy (* and & b4 a variable), good luck.
+//After this point I expect of you to understand and automatically deal with all that pointer function parameter thingy (* and & b4 a variable), good luck.
+
+
+
 
 int main()
 {
+    int array_max,array_min,array_sum;
+    float array_avg;
+    while (1)
+    {
+        char choice_line[30];
+        int check_1 = scanf("%[^\n]s",choice_line); //This [] after % is called "scanset"    It specifies which characters it reads (e.g. [A-Z] means read only A,B,C,...,Z) and which it doesn't... like it ends when it reads that character (e.g. [^\n] means that read everything until newline and also allow whitespace)
+        check_i(check_1,1);
+        printf("%s\n",choice_line); 
+
+
+
+
+        return 0;//temporary for convenience
+    }
 
 
 
